@@ -12,16 +12,36 @@
     align-items: center;
 }
 
-.items-container{
-    margin: 0 auto;
+.image-slider{
+    height: 80vh;
+    width: 90vw;
+    position: relative;
+    background-image: url(../img/01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+.arrow-up,
+.arrow-down{
+    background-color: #c5cfc8;
+    position: absolute;
+    left: 50%;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60%;
-    width: 80%;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-img{
-    min-width: 80%;
-    
+.arrow-up{
+    top: 1em;
+}
+
+.arrow-down{
+    bottom: 1em;
 }
